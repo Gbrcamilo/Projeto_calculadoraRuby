@@ -1,0 +1,51 @@
+Calculadora Web com Sinatra
+Descrição
+Este projeto é uma aplicação web simples de calculadora construída com o framework Sinatra em Ruby. A calculadora permite que os usuários realizem operações aritméticas básicas: adição, subtração, multiplicação e divisão.
+
+Estrutura do Projeto
+csharp
+Copiar código
+public/
+└── css/
+    └── style.css
+views/
+├── calculator.erb
+app.rb
+Gemfile
+Gemfile.lock
+Arquivos Principais
+app.rb: Este é o arquivo principal da aplicação que define as rotas e a lógica de cálculo.
+calculator.erb: O arquivo de visualização que contém o HTML e o formulário da calculadora.
+style.css: Estilos CSS para a aparência da calculadora.
+Dependências
+A aplicação utiliza as seguintes gems:
+
+sinatra: Para criar a aplicação web.
+rackup: Para executar a aplicação.
+As dependências estão listadas no Gemfile e podem ser instaladas usando o Bundler:
+
+bash
+Copiar código
+bundle install
+Como Executar
+Clone o repositório ou baixe os arquivos do projeto.
+Navegue até o diretório do projeto no terminal.
+Execute o servidor Sinatra com o seguinte comando:
+bash
+Copiar código
+ruby app.rb
+Acesse a calculadora no seu navegador através do endereço http://localhost:4567.
+Funcionalidade
+A calculadora permite que os usuários:
+
+Insiram dois números.
+Selecione uma operação (adição, subtração, multiplicação ou divisão).
+Clique no botão "Calcular" para ver o resultado da operação.
+Lógica de Cálculo
+A lógica de cálculo é implementada na rota POST /calculate, onde os números e a operação são processados e o resultado é retornado. A aplicação também verifica a divisão por zero e retorna uma mensagem de erro apropriada.
+
+Estilos
+O CSS fornece uma interface limpa e responsiva, garantindo que a calculadora seja visualmente agradável e fácil de usar.
+
+Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.

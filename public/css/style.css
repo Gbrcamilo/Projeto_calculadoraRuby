@@ -1,0 +1,86 @@
+/* Estilização do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    /* Fonte da página */
+    background-color: #f4f4f4;
+    /* Cor de fundo suave */
+    display: flex;
+    /* Usa flexbox para centralizar o conteúdo */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    height: 100vh;
+    /* Ocupa toda a altura da tela */
+    margin: 0;
+    /* Remove margens padrão */
+}
+
+/* Estilização do contêiner da calculadora */
+.calculator {
+    background-color: white;
+    /* Cor de fundo da calculadora */
+    padding: 20px;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave ao redor */
+}
+
+/* Estilização do cabeçalho */
+h1 {
+    text-align: center;
+    /* Centraliza o texto do cabeçalho */
+}
+
+/* Estilização dos campos de entrada e seleção */
+input[type="number"],
+select {
+    width: 100%;
+    /* Largura total do contêiner */
+    padding: 10px;
+    /* Espaçamento interno */
+    margin: 10px 0;
+    /* Margem superior e inferior */
+    border: 1px solid #ddd;
+    /* Borda leve */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+}
+
+/* Estilização do botão */
+button {
+    width: 100%;
+    /* Largura total do contêiner */
+    padding: 10px;
+    /* Espaçamento interno */
+    background-color: #28a745;
+    /* Cor de fundo verde */
+    color: white;
+    /* Cor do texto */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Muda o cursor ao passar o mouse */
+}
+
+/* Efeito de hover para o botão */
+button:hover {
+    background-color: #218838;
+    /* Cor de fundo mais escura ao passar o mouse */
+}
+
+/* Estilização da área de resultado */
+.result {
+    margin-top: 20px;
+    /* Margem superior */
+    font-size: 20px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Negrito */
+    text-align: center;
+    /* Centraliza o texto */
+}
