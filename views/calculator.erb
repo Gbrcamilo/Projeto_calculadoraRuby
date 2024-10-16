@@ -1,40 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .calculator {
-            width: 300px;
-            margin: 100px auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .calculator input,
-        .calculator select {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-        }
-
-        .calculator button {
-            padding: 10px;
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-
 <body>
     <div class="calculator">
         <form action="/calculate" method="post">
@@ -45,15 +16,14 @@
                 <option value="subtract">Subtract</option>
                 <option value="multiply">Multiply</option>
                 <option value="divide">Divide</option>
+                <option value="percentage">Percentage</option> <!-- Nova operação -->
             </select>
             <button type="submit">Calculate</button>
         </form>
 
         <% if @result %>
-            <h2>Result: <%= @result %>
-            </h2>
-            <% end %>
+            <h2>Result: <%= @result %></h2>
+        <% end %>
     </div>
 </body>
-
 </html>

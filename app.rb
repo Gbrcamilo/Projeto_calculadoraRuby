@@ -12,7 +12,7 @@ post '/calculate' do
   # Obtém os valores dos parâmetros enviados pelo formulário e os converte para float
   @num1 = params[:num1].to_f
   @num2 = params[:num2].to_f
-  @operation = params[:operation] # Obtém a operação selecionada (add, subtract, multiply, divide)
+  @operation = params[:operation] # Obtém a operação selecionada (add, subtract, multiply, divide, percentage)
 
   # Realiza a operação com base na operação selecionada
   @result = case @operation
@@ -24,6 +24,8 @@ post '/calculate' do
               @num1 * @num2     # Multiplica os dois números
             when "divide"       # Se a operação for "divide"
               @num2 != 0 ? @num1 / @num2 : "Error: Division by zero" # Divide, mas verifica se o divisor é zero
+            when "percentage"    # Se a operação for "percentage"
+              (@num1 * @num2) / 100 # Calcula a porcentagem
             else
               "Invalid Operation" # Caso a operação não seja válida
             end
